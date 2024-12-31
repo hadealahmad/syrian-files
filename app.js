@@ -265,6 +265,7 @@ function drawTextNode(node) {
     ctx.fillStyle = '#fff';
     ctx.font = '18px IBM Plex Sans';
     ctx.textAlign = 'right';
+    ctx.direction = 'rtl';
     ctx.padding = '10px';
     const lines = node.text.split('\n');
     let lineHeight = 22;
