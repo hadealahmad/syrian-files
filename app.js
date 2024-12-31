@@ -263,7 +263,9 @@ function drawTextNode(node) {
 
     
     ctx.fillStyle = '#fff';
-    ctx.font = '18px sans-serif';
+    ctx.font = '18px IBM Plex Sans';
+    ctx.direction = 'rtl';
+    ctx.padding = '10px';
     const lines = node.text.split('\n');
     let lineHeight = 22;
     for (let i = 0; i < lines.length; i++) {
